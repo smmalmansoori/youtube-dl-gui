@@ -716,7 +716,7 @@ class MainFrame(wx.Frame):
             log_window.Show()
 
     def _on_about(self, event):
-        info = wx.AboutDialogInfo()
+        info = wx.adv.AboutDialogInfo()
 
         if self.app_icon is not None:
             info.SetIcon(self.app_icon)
@@ -728,7 +728,7 @@ class MainFrame(wx.Frame):
         info.SetLicense(__licensefull__)
         info.AddDeveloper(__author__)
 
-        wx.AboutBox(info)
+        wx.adv.AboutBox(info)
 
     def _set_publisher(self, handler, topic):
         """Sets a handler for the given topic.
