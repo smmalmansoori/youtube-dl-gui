@@ -953,7 +953,7 @@ class MainFrame(wx.Frame):
             See updatemanager.UpdateThread _talk_to_gui() method.
 
         """
-        data = msg.data
+        data = msg
 
         if data[0] == 'download':
             self._status_bar_write(self.UPDATING_MSG)
