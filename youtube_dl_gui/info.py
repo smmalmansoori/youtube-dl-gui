@@ -10,7 +10,7 @@ from __future__ import unicode_literals
 
 __author__ = 'Sotiris Papadopoulos'
 __contact__ = 'ytubedlg@gmail.com'
-__projecturl__ = 'https://mrs0m30n3.github.io/youtube-dl-gui/'
+__projecturl__ = 'https://github.com/smmalmansoori/youtube-dl-gui'
 
 __appname__ = 'Youtube-DLG'
 __license__ = 'UNLICENSE'
