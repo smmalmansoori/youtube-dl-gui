@@ -989,10 +989,10 @@ class MainFrame(wx.Frame):
 
         """
         if not wx.TheClipboard.IsOpened():
-
             if wx.TheClipboard.Open():
-                if wx.TheClipboard.IsSupported(wx.DataFormat(wx.DF_TEXT)):
-
+                # TODO Remove DF_TEXT check if it's no longer needed
+                if wx.TheClipboard.IsSupported(wx.DataFormat(wx.DF_TEXT)) or \
+                    wx.TheClipboard.IsSupported(wx.DataFormat(wx.DF_UNICODETEXT)):
                     data = wx.TextDataObject()
                     wx.TheClipboard.GetData(data)
 
