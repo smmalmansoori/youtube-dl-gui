@@ -11,7 +11,7 @@ from threading import Thread
 from urllib.request import urlopen, URLError, HTTPError
 
 from wx import CallAfter
-from wx.lib.pubsub import pub as Publisher
+from pubsub import pub as Publisher
 
 from .utils import (
     YOUTUBEDL_BIN,

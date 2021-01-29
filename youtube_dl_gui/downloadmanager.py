@@ -26,7 +26,7 @@ from threading import (
 )
 
 from wx import CallAfter
-from wx.lib.pubsub import pub as Publisher
+from pubsub import pub as Publisher
 
 from .parsers import OptionsParser
 from .updatemanager import UpdateThread
@@ -751,4 +751,3 @@ class Worker(Thread):
             self._wait_for_reply = True
 
         CallAfter(Publisher.sendMessage, WORKER_PUB_TOPIC, msg=(signal, data))
-
