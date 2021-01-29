@@ -220,9 +220,9 @@ class TabPanel(wx.Panel):
             _, country = lang_code.split('_')
 
             if country in flagart.catalog:
-                flag_bmp = flagart.catalog[country].getBitmap()
+                flag_bmp = flagart.catalog[country].GetBitmap()
             else:
-                flag_bmp = flagart.catalog["BLANK"].getBitmap()
+                flag_bmp = flagart.catalog["BLANK"].GetBitmap()
 
             combobox.Append(lang_name, flag_bmp)
 
