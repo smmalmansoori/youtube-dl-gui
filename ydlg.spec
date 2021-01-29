@@ -6,7 +6,8 @@ block_cipher = None
 a = Analysis(['youtube_dl_gui/__main__.py'],
              binaries=[],
              datas=[
-                 ('youtube_dl_gui/data', 'data')
+                 ('youtube_dl_gui/data', 'data'),
+                 ('youtube_dl_gui/locale', 'locale')
              ],
              hiddenimports=[],
              hookspath=[],
