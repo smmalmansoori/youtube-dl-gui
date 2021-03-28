@@ -1,0 +1,5 @@
+auto-py-to-exe==2.8.0
+pyinstaller==4.2
+pypubsub==4.0.3
+twodict==1.2
+wxpython==4.1.1
