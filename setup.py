@@ -255,15 +255,23 @@ def windows_setup():
         # py2exe dependencies & options
         # TODO change directory for ffmpeg.exe & ffprobe.exe
         dependencies = [
-            "C:\\Windows\\System32\\ffmpeg.exe",
-            "C:\\Windows\\System32\\ffprobe.exe",
-            "C:\\python27\\DLLs\\MSVCP90.dll"
+            # "C:\\Windows\\System32\\ffmpeg.exe",
+            "C:\\ProgramData\\scoop\\apps\\ffmpeg\\current\\bin\\ffmpeg.exe",
+            # "C:\\Windows\\System32\\ffprobe.exe",
+            "C:\\ProgramData\\scoop\\apps\\ffmpeg\\current\\bin\\ffprobe.exe",
+            # "C:\\python27\\DLLs\\MSVCP90.dll"
+            "C:\\tmp\\MSVCP140.dll"
         ]
 
+        # options = {
+        #     "includes": ["wx.lib.pubsub.*",
+        #                  "wx.lib.pubsub.core.*",
+        #                  "wx.lib.pubsub.core.arg1.*"]
+        # }
+
         options = {
-            "includes": ["wx.lib.pubsub.*",
-                         "wx.lib.pubsub.core.*",
-                         "wx.lib.pubsub.core.arg1.*"]
+            "packages": 'encodings, pubsub',
+            "includes": None
         }
         #############################################
 
